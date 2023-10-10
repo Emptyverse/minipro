@@ -29,6 +29,7 @@
         "isKeepAlive": true
       }
     },
+
     {
       "path": "/proTable",
       "name": "proTable",
@@ -162,9 +163,9 @@
       ]
     },
     {
-      "path": "/auth",
-      "name": "auth",
-      "redirect": "/auth/menu",
+      "path": "/acl",
+      "name": "acl",
+      "redirect": "/acl/user",
       "meta": {
         "icon": "Lock",
         "title": "权限管理",
@@ -176,12 +177,12 @@
       },
       "children": [
         {
-          "path": "/auth/menu",
-          "name": "authMenu",
-          "component": "/auth/menu/index",
+          "path": "/acl/user",
+          "name": "authUser",
+          "component": "/acl/user/index",
           "meta": {
             "icon": "Menu",
-            "title": "菜单权限",
+            "title": "用户管理",
             "isLink": "",
             "isHide": false,
             "isFull": false,
@@ -190,12 +191,12 @@
           }
         },
         {
-          "path": "/auth/button",
-          "name": "authButton",
-          "component": "/auth/button/index",
+          "path": "/acl/role",
+          "name": "authRole",
+          "component": "/acl/role/index",
           "meta": {
             "icon": "Menu",
-            "title": "按钮权限",
+            "title": "角色管理",
             "isLink": "",
             "isHide": false,
             "isFull": false,

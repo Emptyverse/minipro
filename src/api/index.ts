@@ -106,5 +106,22 @@ class RequestHttp {
     return this.service.post(url, params, { ..._object, responseType: "blob" });
   }
 }
-
+export {
+  getAclUserList,
+  addAclUser,
+  updateAclUser,
+  deleteAclUserById,
+  batchAclUser,
+  getUserRolesList,
+  assignUserRoles
+} from "./acl/account";
+export { getRoleList, deleteRole, addRole, updateRole } from "./acl/role";
+export {
+  getRolePermission,
+  assignRolePermission,
+  getPermissionList,
+  deletePermission,
+  addPermission,
+  updatePermission
+} from "./acl/permission";
 export default new RequestHttp(config);
